@@ -1,6 +1,12 @@
 
 let readlineSync = require("readline-sync");
 
+let començament = "Es una aventura per trobar el meu amic que s'ha amagat";
+let pista = "Vam trobar la empremta a la porta, i quan miras desde la porta del amari es veu unes pijades de fang que van cap la cuina";
+let pista1 = "Vam trobar un cabell del meu amic,pero despres vam anar al meu cuarto";
+let pista2 = "Vam olora la seva colonia";
+let pista3 = "Hem trobat el meu amic";
+
 const historia = [{
     "text" :"Es una aventura per trobar el meu amic que s'ha amagat",
     "si" : 1,
@@ -24,8 +30,9 @@ const historia = [{
 }];
 
 let numerodePagina = 0;
+let indexdePagina=0;
 while (numerodePagina >=0){
-    let pagina = historia[indexndePagina];
+    let pagina = historia[indexdePagina];
     console.log(pagina.text);
     amicperdut();
     si : pagina = pagina.si;
@@ -33,16 +40,10 @@ while (numerodePagina >=0){
  
 
 
+
 cometdius();
-
-let començament = "Es una aventura per trobar el meu amic que s'ha amagat";
-let pista = "Vam trobar la empremta a la porta, i quan miras desde la porta del amari es veu unes pijades de fang que van cap la cuina";
-let pista1 = "Vam trobar un cabell del meu amic,pero despres vam anar al meu cuarto";
-let pista2 = "Vam olora la seva colonia";
-let pista3 = "Hem trobat el meu amic";
-
-
 amicperdut();
+
 
 
 function amicperdut(){
